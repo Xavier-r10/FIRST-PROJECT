@@ -7,30 +7,35 @@
     <link rel="stylesheet" href="assets/css/login.css" media="screen" type="text/css">
     <title>Se connecter</title>
 </head>
+
+<div class="container-fluid p-3 m-2">
+    <nav class="navbar navbar-light bg-light">
+        <div class="row">
+            <a class="navbar-brand" href="#">
+            <img src="asset/images/logo.png" alt="" width="120" height="100"><h3><I>Mon site</I></h3>
+            </a>
+
+            <div class="row col-lg-4">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">A propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Contactez-moi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Se connecter</a>
+                    </li>
+                </ul>
+            
+        </div>
+    </nav>
+</div>
+
 <body>
-    <div class="left">
-    
-        <img src="assets/js/logo.jpg" alt="Logo" width=400px height=200px>
-        
-    </div>
-    <div id="container">
-        <form action="controller/user.objet.php" method="post">
-            <h1>Se<b>_</b>connecter</h1>
-            <label for="nom"><h3>Email</h3></label>
-            <input type="email" placeholder="Entrer votre adresse email" name="email" required>
 
-            <label for="Mot de passe"><h3>Mot de passe</h3></label>
-            <input type="password" placeholder="Entrer le mot de passe" name="password" required>
-
-            <input type="submit" id='submit' value='LOGIN' >
-            <h5><a href="Mdpo.php"> Mot<b>_</b>de<b>_</b>passe<b>_</b>oublié<b>_</b>? </a></h5>
-            <h5 id="signup"><a href="créerCompte.php"> Créer<b>_</b>un<b>_</b>compte </a></h5><br>
-            <h5 id="aide"><a href="AideNC.php"> Aide(?) </a></h5>
-
-        </form>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 </body>
 </html>
