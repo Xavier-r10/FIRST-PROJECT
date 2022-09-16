@@ -11,7 +11,7 @@ require 'dbcon.php'
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>Informations des étudiants</title>
   </head>
   <body>
     <div class="container">
@@ -35,9 +35,30 @@ require 'dbcon.php'
                 <th>Action</th>
               </thead>
               <tbody>
-                <tr>
-                  <td>1</td>
-                </tr>
+                <?php 
+                  $query = "SELECT * FROM students";
+                  $query_run = mysqli_query($con, $query);
+
+                  if(mysqli_num_rows($query_run) > 0)
+                  {
+                    foreach($query_run as $student)
+                    {
+                      ?>
+                      <tr>
+                        <td><?= $student['id'];?></td>
+                        <td><?= $student['name'];?></td>
+                        <td><?= $student['email'];?></td>
+                        <td><?= $student['phone'];?></td>
+                        <td><?= $student['course'];?></td>
+                      </tr>
+                      <?php
+                    }
+                  }
+                  else
+                  {
+                    echo "<h5> No record found</h5>";
+                  }
+                ?>
               </tbody>
             </table>
             </div>
